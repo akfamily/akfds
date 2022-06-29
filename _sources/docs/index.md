@@ -15,8 +15,8 @@
 本项目的知识库正在陆续补充中……
 ```
 
-本项目主要由 [AKFamily](https://github.com/akfamily) 组织负责维护，目前该组织已经开源 AKShare
-和 AKToools 等开源项目，也欢迎大家使用。
+本项目主要由 [AKFamily](https://github.com/akfamily) 组织负责维护，目前该组织已经开源 AKShare，
+AKTools 和 Awesome-data 等开源项目，欢迎大家使用。
 
 目前 AKFamily 开源的项目如下：
 
