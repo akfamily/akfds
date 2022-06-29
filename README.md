@@ -1,15 +1,17 @@
 # AKFDS 知识库
 
-A short example showing how to write a lecture series using Jupyter Book 2.0.
+这是一个关于财经数据科学知识的开源知识库，作者是 [Albert King](https://www.akshare.xyz/)。
+本知识库创建的主要目的是为了方便财经数据科学爱好者、数据科学家及相关人士查询相关的财经资料，
+能够提高在财经数据科学领域的工作效率，也可以作为茶余饭后学习的园地。
 
-## Creating Conda Environment
+## 搭建运行环境
 
 The conda environment is provided as `environment.yml`. This environment is used for all testing by Github Actions and can be setup by:
 
 1. `conda env create -f environment.yml`
 2. `conda activate akfds-dev`
 
-## Building a Jupyter Book
+## 本地构建
 
 Run the following command in your terminal:
 
@@ -39,7 +41,7 @@ This repository is published automatically to `gh-pages` upon `push` to the `mas
 ghp-import -n -p -f akfds/_build/html
 ```
 
-## Notes
+## 注意事项
 
 This repository is used as a test case for [jupyter-book](https://github.com/executablebooks/jupyter-book) and 
 a `requirements.txt` file is provided to support this `CI` application.
