@@ -1,4 +1,4 @@
-# 开源财经数据科学
+# 开源财经数据科学书籍
 
 这是一本关于财经数据科学知识的开源书籍，作者是 [Albert King](https://www.akshare.xyz/) and [John
 Stachurski](https://johnstachurski.net/).
