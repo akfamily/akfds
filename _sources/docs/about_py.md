@@ -18,7 +18,7 @@ kernelspec:
 > longer descend into R.\" -- Chris Wiggins
 
 
-## What\'s Python?
+## 什么是 AKFDS
 
 [Python](https://www.python.org) is a general-purpose programming
 language conceived in 1989 by Dutch programmer [Guido van
@@ -32,7 +32,7 @@ of the most commonly used programming languages.
 
 Popular textbooks on Python programming include {cite}`guttag2016introduction`, {cite}`hill2016learning`, {cite}`aktools2021`, {cite}`awesome-data2021` and {cite}`akshare2019`.
 
-### Common Uses
+### 如何使用 AKFDS
 
 Python is a general-purpose language used in almost all application domains
 such as
@@ -53,7 +53,7 @@ It is steadily [replacing familiar tools like
 Excel](https://news.efinancialcareers.com/us-en/3002556/python-replaced-excel-banking)
 in the fields of finance and banking.
 
-### Relative Popularity
+### 预览 AKFDS
 
 The following chart, produced using Stack Overflow Trends, shows one
 measure of the relative popularity of Python
@@ -86,7 +86,7 @@ Overall, it\'s clear that
 -   Python is a major tool for scientific computing, accounting for a
     rapidly rising share of scientific work around the globe.
 
-### Features
+### ADFDS 的特点
 
 Python is a [high-level language](https://en.wikipedia.org/wiki/High-level_programming_language)
 suitable for rapid development.
