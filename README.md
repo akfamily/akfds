@@ -33,7 +33,7 @@ To remove the build folder (including `cached` executables), you can run:
 jb clean --all akfds/
 ```
 
-## Publishing this Jupyter Book
+## 发布知识库
 
 This repository is published automatically to `gh-pages` upon `push` to the `master` branch.
 
