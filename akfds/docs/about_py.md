@@ -11,7 +11,7 @@ kernelspec:
 
 (about_py)=
 
-# 关于
+# 关于 AKFDS
 
 > \"Python has gotten sufficiently weapons grade that we don't descend
 > into R anymore. Sorry, R people. I used to be one of you but we no
