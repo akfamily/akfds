@@ -1,0 +1,1141 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>股票 &#8212; AKFDS 财经数据科学</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="期权" href="fin_option.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/qe-logo-large.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">AKFDS 财经数据科学</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="about_py.html">
+   关于 AKFDS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="getting_started.html">
+   设置 Python 环境
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python_by_example.html">
+   举例
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="learn_more.html">
+   更多
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fin_futures.html">
+   期货
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fin_option.html">
+   期权
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   股票
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/akfds/docs/fin_stock.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/docs/fin_stock.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/docs/fin_stock.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   股票的定义
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   股票交易市场
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     中国大陆
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       期货交易时间
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     中国香港
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>股票</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   股票的定义
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   股票交易市场
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     中国大陆
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       期货交易时间
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     中国香港
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>股票<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p>本章主要给大家介绍什么是期货，期货的定义最早起源于美国，主要是在大宗商品
+市场的买卖上</p>
+<section id="id2">
+<h2>股票的定义<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>期货的定义：期货是在交易所交易的</p>
+</section>
+<section id="id3">
+<h2>股票交易市场<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<section id="id4">
+<h3>中国大陆<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>交易所名称</p></th>
+<th class="head"><p>交易所代码</p></th>
+<th class="head"><p>合约后缀</p></th>
+<th class="head"><p>首页地址</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.cffex.com.cn/">中国金融期货交易所</a></p></td>
+<td><p>CFFEX</p></td>
+<td><p>.CFX</p></td>
+<td><p><a class="reference external" href="http://www.cffex.com.cn/">http://www.cffex.com.cn/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.shfe.com.cn/">上海期货交易所</a></p></td>
+<td><p>SHFE</p></td>
+<td><p>.SHF</p></td>
+<td><p><a class="reference external" href="http://www.shfe.com.cn/">http://www.shfe.com.cn/</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.ine.cn/">上海国际能源交易中心</a></p></td>
+<td><p>INE</p></td>
+<td><p>.INE</p></td>
+<td><p><a class="reference external" href="http://www.ine.cn/">http://www.ine.cn/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.czce.com.cn/">郑州商品交易所</a></p></td>
+<td><p>CZCE</p></td>
+<td><p>.ZCE</p></td>
+<td><p><a class="reference external" href="http://www.czce.com.cn/">http://www.czce.com.cn/</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.dce.com.cn/">大连商品交易所</a></p></td>
+<td><p>DCE</p></td>
+<td><p>.DCE</p></td>
+<td><p><a class="reference external" href="http://www.dce.com.cn/">http://www.dce.com.cn/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.gfex.com.cn/">广州期货交易所</a></p></td>
+<td><p>GFEX</p></td>
+<td><p>.GFEX</p></td>
+<td><p><a class="reference external" href="http://www.gfex.com.cn/">http://www.gfex.com.cn/</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id5">
+<h4>期货交易时间<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
+<p><strong>本表格更新于 20210621</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>交易所</p></th>
+<th class="head"><p>品种</p></th>
+<th class="head"><p>合约代码</p></th>
+<th class="head"><p>夜盘交易时间</p></th>
+<th class="head"><p>日盘交易时间</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>铜</p></td>
+<td><p>CU</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>铜期权</p></td>
+<td><p>CU-C/P</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>铝</p></td>
+<td><p>AL</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>铝期权</p></td>
+<td><p>AL-C/P</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>铅</p></td>
+<td><p>PB</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>锌</p></td>
+<td><p>ZN</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>锌期权</p></td>
+<td><p>ZN-C/P</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>锡</p></td>
+<td><p>SN</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>镍</p></td>
+<td><p>NI</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>不锈钢</p></td>
+<td><p>SS</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>黄金</p></td>
+<td><p>AU</p></td>
+<td><p>21:00-次日2:30</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>白银</p></td>
+<td><p>AG</p></td>
+<td><p>21:00-次日2:30</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>黄金期权</p></td>
+<td><p>AU-C/P</p></td>
+<td><p>21:00-次日2:30</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>螺纹钢</p></td>
+<td><p>RB</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>热轧卷板</p></td>
+<td><p>HC</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>石油沥青</p></td>
+<td><p>BU</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>天然橡胶</p></td>
+<td><p>RU</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>燃料油</p></td>
+<td><p>FU</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>纸浆</p></td>
+<td><p>SP</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海期货交易所</p></td>
+<td><p>橡胶期权</p></td>
+<td><p>RU-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海期货交易所</p></td>
+<td><p>线材</p></td>
+<td><p>WR</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>黄大豆1号</p></td>
+<td><p>A</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>黄大豆2号</p></td>
+<td><p>B</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>豆粕</p></td>
+<td><p>M</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>豆粕期权</p></td>
+<td><p>M-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>豆油</p></td>
+<td><p>Y</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>棕榈油</p></td>
+<td><p>P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>铁矿石</p></td>
+<td><p>I</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>焦炭</p></td>
+<td><p>J</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>焦煤</p></td>
+<td><p>JM</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>米</p></td>
+<td><p>C</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>玉米淀粉</p></td>
+<td><p>CS</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>聚乙烯</p></td>
+<td><p>L</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>聚氯乙烯</p></td>
+<td><p>V</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>聚丙烯</p></td>
+<td><p>PP</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>乙二醇</p></td>
+<td><p>EG</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>玉米期权</p></td>
+<td><p>C-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>粳米</p></td>
+<td><p>RR</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>苯乙烯</p></td>
+<td><p>EB</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>铁矿石期权</p></td>
+<td><p>I-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>液化石油气</p></td>
+<td><p>PG</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>液化石油气期权</p></td>
+<td><p>PG-CP</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>聚乙烯期权</p></td>
+<td><p>L-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>聚氯乙烯期权</p></td>
+<td><p>V-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>聚丙烯期权</p></td>
+<td><p>PP-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>棕榈油期权</p></td>
+<td><p>P-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>鸡蛋</p></td>
+<td><p>JD</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>纤维板</p></td>
+<td><p>FB</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>大连商品交易所</p></td>
+<td><p>胶合板</p></td>
+<td><p>BB</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>大连商品交易所</p></td>
+<td><p>生猪</p></td>
+<td><p>LH</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>菜粕</p></td>
+<td><p>RM</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>菜籽油</p></td>
+<td><p>OI</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>一号棉花</p></td>
+<td><p>CF</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>精对苯二甲酸</p></td>
+<td><p>TA</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>白砂糖</p></td>
+<td><p>SR</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>白糖期权</p></td>
+<td><p>SR-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>甲醇</p></td>
+<td><p>MA</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>玻璃</p></td>
+<td><p>FG</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>动力煤</p></td>
+<td><p>ZC</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>棉纱</p></td>
+<td><p>CY</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>棉花期权</p></td>
+<td><p>CF-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>纯碱</p></td>
+<td><p>SA</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>精对苯二甲酸期权</p></td>
+<td><p>TA-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>甲醇期权</p></td>
+<td><p>MA-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>菜粕期权</p></td>
+<td><p>RM-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>动力煤期权</p></td>
+<td><p>ZC-C/P</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>短纤</p></td>
+<td><p>PF</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>粳稻</p></td>
+<td><p>JR</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>菜籽</p></td>
+<td><p>RS</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>普通小麦</p></td>
+<td><p>PM</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>强麦</p></td>
+<td><p>WH</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>早籼稻</p></td>
+<td><p>RI</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>晚籼稻</p></td>
+<td><p>LR</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>硅铁</p></td>
+<td><p>SF</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>锰硅</p></td>
+<td><p>SM</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>苹果</p></td>
+<td><p>AP</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>红枣</p></td>
+<td><p>CJ</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>郑州商品交易所</p></td>
+<td><p>尿素</p></td>
+<td><p>UR</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>郑州商品交易所</p></td>
+<td><p>花生</p></td>
+<td><p>PK</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>中国金融期货交易所</p></td>
+<td><p>沪深300指数</p></td>
+<td><p>IF</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:30-11:30 下午：13:00-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>中国金融期货交易所</p></td>
+<td><p>上证50指数</p></td>
+<td><p>IH</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:30-11:30 下午：13:00-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>中国金融期货交易所</p></td>
+<td><p>中证500指数</p></td>
+<td><p>IC</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:30-11:30 下午：13:00-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>中国金融期货交易所</p></td>
+<td><p>沪深300股指期权</p></td>
+<td><p>IO-C/P</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:30-11:30 下午：13:00-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>中国金融期货交易所</p></td>
+<td><p>5年期国债</p></td>
+<td><p>TF</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:15-11:30 下午：13:00-15:15</p></td>
+</tr>
+<tr class="row-even"><td><p>中国金融期货交易所</p></td>
+<td><p>10年期国债</p></td>
+<td><p>T</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:15-11:30 下午：13:00-15:15</p></td>
+</tr>
+<tr class="row-odd"><td><p>中国金融期货交易所</p></td>
+<td><p>2年期国债</p></td>
+<td><p>TS</p></td>
+<td><p>无</p></td>
+<td><p>上午：09:15-11:30 下午：13:00-15:15</p></td>
+</tr>
+<tr class="row-even"><td><p>上海国际能源交易中心</p></td>
+<td><p>原油</p></td>
+<td><p>SC</p></td>
+<td><p>21:00-次日2:30</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海国际能源交易中心</p></td>
+<td><p>原油期权</p></td>
+<td><p>SC-C/P</p></td>
+<td><p>21:00-次日2:30</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海国际能源交易中心</p></td>
+<td><p>20号胶</p></td>
+<td><p>NR</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>上海国际能源交易中心</p></td>
+<td><p>低硫燃料油</p></td>
+<td><p>LU</p></td>
+<td><p>21:00-23:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+<tr class="row-even"><td><p>上海国际能源交易中心</p></td>
+<td><p>阴极铜</p></td>
+<td><p>BC</p></td>
+<td><p>21:00-次日1:00</p></td>
+<td><p>上午：09:00-10:15 10:30-11:30 下午：13:30-15:00</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id6">
+<h3>中国香港<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>交易所名称</p></th>
+<th class="head"><p>交易所代码</p></th>
+<th class="head"><p>合约后缀</p></th>
+<th class="head"><p>首页地址</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.cffex.com.cn/">中国金融期货交易所</a></p></td>
+<td><p>CFFEX</p></td>
+<td><p>.CFX</p></td>
+<td><p><a class="reference external" href="http://www.cffex.com.cn/">http://www.cffex.com.cn/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.shfe.com.cn/">上海期货交易所</a></p></td>
+<td><p>SHFE</p></td>
+<td><p>.SHF</p></td>
+<td><p><a class="reference external" href="http://www.shfe.com.cn/">http://www.shfe.com.cn/</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.ine.cn/">上海国际能源交易中心</a></p></td>
+<td><p>INE</p></td>
+<td><p>.INE</p></td>
+<td><p><a class="reference external" href="http://www.ine.cn/">http://www.ine.cn/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.czce.com.cn/">郑州商品交易所</a></p></td>
+<td><p>CZCE</p></td>
+<td><p>.ZCE</p></td>
+<td><p><a class="reference external" href="http://www.czce.com.cn/">http://www.czce.com.cn/</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.dce.com.cn/">大连商品交易所</a></p></td>
+<td><p>DCE</p></td>
+<td><p>.DCE</p></td>
+<td><p><a class="reference external" href="http://www.dce.com.cn/">http://www.dce.com.cn/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.gfex.com.cn/">广州期货交易所</a></p></td>
+<td><p>GFEX</p></td>
+<td><p>.GFEX</p></td>
+<td><p><a class="reference external" href="http://www.gfex.com.cn/">http://www.gfex.com.cn/</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id7">
+<h3><a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="fin_option.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">期权</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Albert King<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
