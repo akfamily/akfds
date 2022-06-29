@@ -16,43 +16,23 @@ kernelspec:
 
 # 关于 AKFDS
 
-> \"AKFDS 是一个开源财经知识库项目，主要是为了方便查阅相关的财经知识而建立的，
-> 所有人都可以向该库提交内容" -- Albert King
+> “AKFDS 是一个开源财经知识库项目，主要是为了方便查阅相关的财经知识而建立的，
+> 所有人都可以向该库提交内容“ -- Albert King
 
 ## 什么是 AKFDS
 
-[Python](https://www.python.org) is a general-purpose programming
-language conceived in 1989 by Dutch programmer [Guido van
-Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum).
+AKFDS 是一个关于财经数据科学知识的开源知识库，作者是 [Albert King](https://www.akshare.xyz/)。
 
-Python is free and open source, with development coordinated through the
-[Python Software Foundation](https://www.python.org/psf/).
+AKFDS 创建的主要目的是为了方便财经数据科学爱好者、数据科学家及相关人士查询相关的财经资料，
+能够提高在财经数据科学领域的工作效率，也可以作为茶余饭后学习的园地。
 
-Python has experienced rapid adoption in the last decade and is now one
-of the most commonly used programming languages.
-
-Popular textbooks on Python programming include {cite}`aktools2021`, {cite}`awesome-data2021` and {cite}`akshare2019`.
+作者还有其他开源项目，欢迎引用 {cite}`aktools2021`, {cite}`awesome-data2021` and {cite}`akshare2019`.
 
 ### 如何使用 AKFDS
 
-Python is a general-purpose language used in almost all application domains
-such as
+AKFDS 的使用非常简单，您只需要访问项目主页：https://akfamily.github.io/akfds 就可以查看最新的知识库信息。
 
--   communications
--   web development
--   CGI and graphical user interfaces
--   game development
--   multimedia, data processing, security, etc., etc., etc.
-
-Python is beginner-friendly and routinely used to teach computer science and
-programming in top computer science programs.
-
-Python is particularly popular within the scientific and data science
-communities.
-
-It is steadily [replacing familiar tools like
-Excel](https://news.efinancialcareers.com/us-en/3002556/python-replaced-excel-banking)
-in the fields of finance and banking.
+同时，AKFDS 还支持在线搜索您需要的资源，您只需要在搜索栏输入相关的关键词，就可以一键直达您需要的信息。
 
 ### 预览 AKFDS
 
