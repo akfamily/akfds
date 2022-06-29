@@ -11,7 +11,7 @@ kernelspec:
 
 (getting_started)=
 
-# 设置 Python 环境
+# Python
 
 ## Overview
 
