@@ -14,63 +14,55 @@ kernelspec:
 
 (getting_started)=
 
-# Python
+# 工具
 
-## Overview
+## 财经数据科学的编程语言
 
-In this lecture, you will learn how to
+在这里，我们会给您介绍在财经领域常用的编程语言
 
-1.  get a Python environment up and running
-2.  execute simple Python commands
-3.  run a sample program
-4.  install the code libraries that underpin these lectures
+1. Python
+2. R
 
-## Anaconda
+## 财经数据科学的软件
 
-The [core Python package](https://www.python.org/downloads/) is easy to
-install but *not* what you should choose for these lectures.
+财经数据科学的软件比较丰富，我们这里列出主要使用的软件
 
-These lectures require the entire scientific programming ecosystem,
-which
+- Matlab
+- Stata
+- Eviews
+- SPSS
 
--   the core installation doesn\'t provide
--   is painful to install one piece at a time.
+以上的工具可以帮助我们进行建模等操作，对于比较简单的需求，您也可以使用
 
-Hence the best approach for our purposes is to install a Python
-distribution that contains
+1. Excel
+2. 计算器
 
-1.  the core Python language **and**
-2.  compatible versions of the most popular scientific libraries.
+## Python 编程环境
 
+Python 的最佳发行版本 [Anaconda](https://www.anaconda.com/what-is-anaconda/).
 
-The best such distribution is
-[Anaconda](https://www.anaconda.com/what-is-anaconda/).
+Anaconda 的特点
 
-Anaconda is
-
--   very popular
--   cross-platform
--   comprehensive
--   completely unrelated to the Nicki Minaj song of the same name
-
-Anaconda also comes with a great package management system to organize
-your code libraries.
+- 非常流行
+- 跨平台
+- 综合的
+- 强大的
 
 ```{note}
-All of what follows assumes that you adopt this recommendation!
+强烈推荐新手安装使用
 ```
 
 (install_anaconda)=
 
-### Installing Anaconda
+### 安装 Anaconda
 
 To install Anaconda, [download](https://www.anaconda.com/download/) the
 binary and follow the instructions.
 
 Important points:
 
--   Install the latest version!
--   If you are asked during the installation process whether you\'d like
+- Install the latest version!
+- If you are asked during the installation process whether you\'d like
     to make Anaconda your default Python installation, say yes.
 
 ### Updating Anaconda
