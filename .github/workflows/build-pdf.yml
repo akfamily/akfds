@@ -4,7 +4,7 @@ on:
     - cron: '0 0 * * *'
   push:
     branches:
-      - main
+      - master
 jobs:
   build-pdf:
     runs-on: ubuntu-latest
