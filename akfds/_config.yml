@@ -13,9 +13,6 @@ execute:
 html:
   home_page_in_navbar         : false
 
-# Interact link settings
-notebook_interface            : "jupyterlab"
-
 # Launch button settings
 repository:
   url                         : https://github.com/akfamily/akfds
@@ -23,6 +20,7 @@ repository:
   branch                      : "main"
 
 launch_buttons:
+  notebook_interface          : "jupyterlab"
   binderhub_url               : "https://mybinder.org"
   text                        : "Launch binder"
 
