@@ -20,12 +20,12 @@ jobs:
           miniconda-version: 'latest'
           python-version: 3.8
           environment-file: environment.yml
-          activate-environment: qe-mini-example
+          activate-environment: akfds-dev
 
       - name: Install jupyter_book
         shell: bash -l {0}
-        run: pip install git+https://github.com/ExecutableBookProject/jupyter-book.git@master
+        run: pip install git+https://github.com/akfamily/akfds.git@master
 
-      - name: Build QuantEcon Mini Example
+      - name: Build AKFDS
         shell: bash -l {0}
         run: jb build akfds/
