@@ -16,7 +16,7 @@ kernelspec:
 
 # 关于 AKFDS
 
-> \"AKFDS 是一个开源财经知识库项目，主要是为了方便查阅相关的财经知识而建立的
+> \"AKFDS 是一个开源财经知识库项目，主要是为了方便查阅相关的财经知识而建立的，
 > 所有人都可以向该库提交内容" -- Albert King
 
 ## 什么是 AKFDS
@@ -31,7 +31,7 @@ Python is free and open source, with development coordinated through the
 Python has experienced rapid adoption in the last decade and is now one
 of the most commonly used programming languages.
 
-Popular textbooks on Python programming include {cite}`guttag2016introduction`, {cite}`hill2016learning`, {cite}`aktools2021`, {cite}`awesome-data2021` and {cite}`akshare2019`.
+Popular textbooks on Python programming include {cite}`aktools2021`, {cite}`awesome-data2021` and {cite}`akshare2019`.
 
 ### 如何使用 AKFDS
 
