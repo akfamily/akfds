@@ -23,7 +23,7 @@ launch_buttons:
 
 repository:
   url                         : https://github.com/akfamily/akfds
-  path_to_book                : akfds/akfds/docs
+  path_to_book                : akfds
   branch                      : main
 
 # LaTeX settings
