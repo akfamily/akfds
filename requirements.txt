@@ -2,3 +2,4 @@ sphinx
 pandas
 matplotlib
 jupyter-book
+akshare
