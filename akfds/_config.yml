@@ -18,7 +18,7 @@ notebook_interface            : "notebook"
 
 # Launch button settings
 repository:
-  url                         : https://github.com/akfamily/akfds/main
+  url                         : https://github.com/akfamily/akfds
   path_to_book                : "akfds"
   branch                      : "main"
 
