@@ -8,5 +8,5 @@ dependencies:
   - pandas
   - matplotlib
   - pip:
-    - jupyter-book
     - akshare
+    - jupyter-book
