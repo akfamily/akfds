@@ -14,7 +14,7 @@ kernelspec:
 
 (getting_started)=
 
-# 工具
+# 科学工具
 
 ## 财经数据科学的编程语言
 
