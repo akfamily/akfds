@@ -11,7 +11,8 @@ execute:
 
 # HTML-specific settings
 html:
-  home_page_in_navbar         : false
+  home_page_in_navbar       : true
+  extra_navbar              : Powered by <a href="https://github.com/akfamily">AKFamily</a>
 
 # Launch button settings
 launch_buttons:
