@@ -35,6 +35,10 @@ jb clean --all akfds/
 
 This repository is published automatically to `gh-pages` upon `push` to the `master` branch.
 
+```bash
+ghp-import -n -p -f akfds/_build/html
+```
+
 ## Notes
 
 This repository is used as a test case for [jupyter-book](https://github.com/executablebooks/jupyter-book) and 
