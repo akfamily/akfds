@@ -1,13 +1,13 @@
 title : AKFDS 财经数据科学
 author: Albert King
-logo: 'qe-logo-large.png'
+logo: 'https://avatars.githubusercontent.com/u/91018023'
 
 # Short description about the book
 description: >-
   主要介绍开源财经知识
 
 execute:
-  execute_notebooks           : cache
+  execute_notebooks           : force
 
 # HTML-specific settings
 html:
