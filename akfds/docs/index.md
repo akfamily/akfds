@@ -5,7 +5,7 @@
 能够提高在财经数据科学领域的工作效率，通过也可以作为茶余饭后学习的园地。
 
 ```{note}
-本开源项目的资料来源于包括但不限于论文、教材、书籍、研报、公开及互联网资料，会对引用的内容做来源标注。
+本开源项目的资料来源于包括但不限于论文、教材、书籍、研报、及互联网资料，会对引用的内容做来源标注。
 本项目不对资料的准确性负责，请使用者注意查询相关资源的原始出处。
 也欢迎给本项目贡献更多的财经知识，包括但不限于：股票、期货、期权、外汇、加密货币等金融品种，
 也可以是财经数据科学教程，Python、R 等。
@@ -14,6 +14,23 @@
 本项目主要由 [AKFamily](https://github.com/akfamily) 组织负责维护，目前该组织已经开源 AKShare
 和 AKToools 等开源项目，也欢迎大家使用。
 
-1. [AKShare](https://github.com/akfamily/akshare) 是一款基于 Python 的开源财经数据接口库
-2. [AKTools](https://github.com/akfamily/aktools) 是一款为非 Python 用户提供的的开源财经数据接口库 AKShare 的 HTTP API
-3. [Awesome-data](https://github.com/akfamily/awesome-data) 是一个财经数据查询目录
+目前 AKFamily 开源的项目如下：
+
+- [AKShare](https://github.com/akfamily/akshare) 是一款基于 Python 的开源财经数据接口库
+- [AKTools](https://github.com/akfamily/aktools) 是一款为非 Python 用户提供的的开源财经数据接口库 AKShare 的 HTTP API
+- [Awesome-data](https://github.com/akfamily/awesome-data) 是一个财经数据查询目录
+
+## 关注的领域
+
+### 金融
+
+金融是货币资金融通的总称。主要指与货币流通和银行信用相关的各种活动。
+主要内容包括：货币的发行、投放、流通和回笼；
+各种存款的吸收和提取；
+各项贷款的发放和收回；
+银行会计、出纳、转账、结算、保险、投资、信托、租赁、汇兑、贴现、抵押、证券买卖以及国际间的贸易和非贸易的结算、黄金白银买卖、输出、输入等。
+
+### 机器学习
+
+机器学习是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。
+专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。
