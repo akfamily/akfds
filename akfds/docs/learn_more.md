@@ -14,14 +14,10 @@ kernelspec:
 
 (learn_more)=
 
-# 更多
+# 开源框架
 
-We're about ready to wrap up this brief course on Python for scientific
-computing.
-
-In this last lecture we give some pointers to the major scientific libraries
-and suggestions for further reading.
-
+一个好的框架可以帮助我们事半功倍，反之重复造轮子有可能让我们事倍功半，
+所以找到并学习和使用一款好的框架是我们开展数据科学的不二法门。
 
 ## NumPy
 
