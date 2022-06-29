@@ -14,9 +14,9 @@ kernelspec:
 
 (python_by_example)=
 
-# 举例
+# 量化投资
 
-## Overview
+## 什么是量化投资
 
 We\'re now ready to start learning the Python language itself.
 
@@ -30,7 +30,7 @@ Deeper concepts will be covered in later lectures.
 
 You should have read the {ref}`lecture <getting_started>` on getting started with Python before beginning this one.
 
-## The Task: Plotting a White Noise Process
+## 如何进行量化投资
 
 Suppose we want to simulate and plot the white noise process
 $\epsilon_0, \epsilon_1, \ldots, \epsilon_T$, where each draw
