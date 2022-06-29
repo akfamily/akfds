@@ -1,0 +1,4 @@
+sphinx
+pandas
+matplotlib
+jupyter-book
