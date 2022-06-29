@@ -24,7 +24,7 @@ jobs:
 
       - name: Install jupyter_book
         shell: bash -l {0}
-        run: pip install git+https://github.com/akfamily/akfds.git@master
+        run: pip install git+https://github.com/akfamily/akfds.git@main
 
       - name: Build AKFDS
         shell: bash -l {0}
