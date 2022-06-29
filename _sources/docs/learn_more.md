@@ -9,6 +9,8 @@ kernelspec:
   name: python3
 ---
 
+(learn_more)=
+
 # 更多
 
 We're about ready to wrap up this brief course on Python for scientific
@@ -210,7 +212,6 @@ stock_zh_a_hist_df.info()
 ```
 
 ## Further Reading
-
 
 These lectures were originally taken from a longer and more complete lecture
 series on Python programming hosted by [QuantEcon](https://quantecon.org).
