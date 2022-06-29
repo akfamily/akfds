@@ -14,12 +14,10 @@ kernelspec:
 
 (about_py)=
 
-# 关于 AKFDS 我想说自动部署
+# 关于 AKFDS
 
-> \"Python has gotten sufficiently weapons grade that we don't descend
-> into R anymore. Sorry, R people. I used to be one of you but we no
-> longer descend into R.\" -- Chris Wiggins
-
+> \"AKFDS 是一个开源财经知识库项目，主要是为了方便查阅相关的财经知识而建立的
+> 所有人都可以向该库提交内容" -- Albert King
 
 ## 什么是 AKFDS
 
@@ -121,7 +119,7 @@ code.
 [Namespaces](https://en.wikipedia.org/wiki/Namespace) improve
 productivity by cutting down on bugs and syntax errors.
 
-## Scientific Programming
+## 科学计算
 
 Python has become one of the core languages of scientific computing.
 
@@ -136,7 +134,7 @@ It\'s either the dominant player or a major player in
 
 Its popularity in economics is also beginning to rise.
 
-## Bibliography
+## 参考文献
 
 ```{bibliography} ../_bibliography/references.bib
 ```
