@@ -22,7 +22,7 @@ repository:
   path_to_book                : "akfds"
   branch                      : "main"
 
-binder:
+launch_buttons:
   binderhub_url               : "https://mybinder.org"
   text                        : "Launch binder"
 
