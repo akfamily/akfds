@@ -14,15 +14,17 @@ html:
   home_page_in_navbar         : false
 
 # Launch button settings
+launch_buttons:
+  notebook_interface          : classic
+  binderhub_url               : https://mybinder.org
+  jupyterhub_url              : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  thebe                       : false  # Add a thebe button to pages (requires the repository to run on Binder)
+  colab_url                   : "" # The URL of Google Colab (https://colab.research.google.com)
+
 repository:
   url                         : https://github.com/akfamily/akfds
-  path_to_book                : "akfds"
-  branch                      : "main"
-
-launch_buttons:
-  notebook_interface          : "classic"
-  binderhub_url               : "https://mybinder.org"
-  text                        : "Launch binder"
+  path_to_book                : akfds
+  branch                      : main
 
 # LaTeX settings
 bibtex_bibfiles:
