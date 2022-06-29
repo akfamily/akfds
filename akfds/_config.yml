@@ -14,7 +14,7 @@ html:
   home_page_in_navbar         : false
 
 # Interact link settings
-notebook_interface            : "notebook"
+notebook_interface            : "jupyterlab"
 
 # Launch button settings
 repository:
