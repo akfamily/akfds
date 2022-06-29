@@ -1,10 +1,10 @@
-title : AKFDS 财经数据科学
+title : AKFDS 财经数据科学知识库
 author: Albert King
 logo: 'ak-logo-large.png'
 
 # Short description about the book
 description: >-
-  主要介绍开源财经知识
+  AKFDS 财经数据科学知识库
 
 execute:
   execute_notebooks           : force
