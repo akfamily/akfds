@@ -92,19 +92,19 @@ including
 
 Example 2D plot with embedded LaTeX annotations
 
-```{figure} /_static/lecture_specific/about_py/qs.png
+```{figure} /_static/lecture_specific/about/qs.png
 :scale: 55%
 ```
 
 Example contour plot
 
-```{figure} /_static/lecture_specific/about_py/bn_density1.png
+```{figure} /_static/lecture_specific/about/bn_density1.png
 :scale: 55%
 ```
 
 Example 3D plot
 
-```{figure} /_static/lecture_specific/about_py/career_vf.png
+```{figure} /_static/lecture_specific/about/career_vf.png
 :scale: 80%
 ```
 

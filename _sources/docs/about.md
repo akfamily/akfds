@@ -12,7 +12,7 @@ kernelspec:
   name: python3
 ---
 
-(about_py)=
+(about)=
 
 # 关于 AKFDS
 
@@ -39,7 +39,7 @@ AKFDS 的使用非常简单，您只需要访问项目主页：https://akfamily.
 The following chart, produced using Stack Overflow Trends, shows one
 measure of the relative popularity of Python
 
-```{figure} /_static/lecture_specific/about_py/python_vs_matlab.png
+```{figure} /_static/lecture_specific/about/python_vs_matlab.png
 :scale: 72%
 ```
 
@@ -54,7 +54,7 @@ library for data analysis with Python has exploded, as seen here.
 
 (The corresponding time path for MATLAB is shown for comparison)
 
-```{figure} /_static/lecture_specific/about_py/pandas_vs_matlab.png
+```{figure} /_static/lecture_specific/about/pandas_vs_matlab.png
 :scale: 23%
 ```
 
