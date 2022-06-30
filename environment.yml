@@ -9,5 +9,4 @@ dependencies:
   - matplotlib
   - pip:
     - akshare
-    - aktools
     - jupyter-book
