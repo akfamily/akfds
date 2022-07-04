@@ -10,3 +10,4 @@ sections:
 - file: docs/fin_option
 - file: docs/fin_fx
 - file: docs/fin_cryptocurrency
+- file: docs/fin_strategy
