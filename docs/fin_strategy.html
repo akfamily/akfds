@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>开源财经数据科学知识库 &#8212; AKFDS</title>
+    <title>量化策略 &#8212; AKFDS</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="关于 AKFDS" href="about.html" />
+    <link rel="prev" title="加密货币" href="fin_cryptocurrency.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="about.html">
    关于 AKFDS
@@ -150,8 +150,8 @@ const thebe_selector_output = ".output, .cell_output"
    加密货币
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="fin_strategy.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    量化策略
   </a>
  </li>
@@ -206,6 +206,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/akfamily/akfds/main?urlpath=tree/akfds/docs/fin_strategy.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -228,7 +257,24 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/docs/index.md"
+        <a href="../_sources/docs/fin_strategy.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/docs/fin_strategy.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -289,18 +335,47 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   关注的领域
+   股票策略
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   期货策略
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     金融
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     机器学习
+     跨期套利
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       原理
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id6">
+         什么是跨期套利
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id7">
+         套利方法
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id8">
+         协整检验
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id9">
+         策略步骤
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -313,7 +388,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>开源财经数据科学知识库</h1>
+                <h1>量化策略</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -325,18 +400,47 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   关注的领域
+   股票策略
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   期货策略
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     金融
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     机器学习
+     跨期套利
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       原理
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id6">
+         什么是跨期套利
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id7">
+         套利方法
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id8">
+         协整检验
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id9">
+         策略步骤
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -351,47 +455,76 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>开源财经数据科学知识库<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
-<p>这是一个关于财经数据科学知识的开源知识库，作者是 <a class="reference external" href="https://www.akshare.xyz/">Albert King</a>。
-本知识库创建的主要目的是为了方便财经数据科学爱好者、数据科学家及相关人士查询相关的财经资料，
-能够提高在财经数据科学领域的工作效率，也可以作为茶余饭后学习的园地。</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>本开源项目的资料来源于包括但不限于论文、教材、书籍、研报、及互联网资料，会对引用的内容做来源标注。
-本项目不对资料的准确性负责，请使用者注意查询相关资源的原始出处。
-也欢迎给本项目贡献更多的财经知识，包括但不限于：股票、期货、期权、外汇、加密货币等金融品种，
-也可以是财经数据科学教程，Python、R 等。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>本项目的知识库正在陆续补充中……</p>
-</div>
-<p>本项目主要由 <a class="reference external" href="https://github.com/akfamily">AKFamily</a> 组织负责维护，目前该组织已经开源 AKShare，
-AKTools 和 Awesome-data 等开源项目，欢迎大家使用。</p>
-<p>目前 AKFamily 开源的项目如下：</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/akfamily/akshare">AKShare</a> 是一款基于 Python 的开源财经数据接口库</p></li>
-<li><p><a class="reference external" href="https://github.com/akfamily/aktools">AKTools</a> 是一款为非 Python 用户提供的的开源财经数据接口库 AKShare 的 HTTP API</p></li>
-<li><p><a class="reference external" href="https://github.com/akfamily/awesome-data">Awesome-data</a> 是一个财经数据查询目录</p></li>
-</ul>
+<h1>量化策略<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p>本章主要给大家介绍什么是期货，期货的定义最早起源于美国，主要是在大宗商品
+市场的买卖上</p>
 <section id="id2">
-<h2>关注的领域<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<h2>股票策略<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>期货的定义：期货是在交易所交易的</p>
+</section>
 <section id="id3">
-<h3>金融<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
-<p>金融是货币资金融通的总称。主要指与货币流通和银行信用相关的各种活动。
-主要内容包括：货币的发行、投放、流通和回笼；
-各种存款的吸收和提取；
-各项贷款的发放和收回；
-银行会计、出纳、转账、结算、保险、投资、信托、租赁、汇兑、贴现、抵押、证券买卖以及国际间的贸易和非贸易的结算、黄金白银买卖、输出、输入等。</p>
-</section>
+<h2>期货策略<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <section id="id4">
-<h3>机器学习<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
-<p>机器学习是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。
-专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。</p>
+<h3>跨期套利<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<section id="id5">
+<h4>原理<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
+<section id="id6">
+<h5>什么是跨期套利<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h5>
+<p>跨期套利是指在同一市场上利用标的相同、交割月份不同的商品期货合约进行长短期套利的策略。跨期套利本质上是一种风险对冲，当价格出现单方向变动时，单边投机者要承担 <strong>价格</strong> 反向变动的风险，而跨期套利过滤了大部分的价格波动风险，只承担 <strong>价差</strong> 反向变动的风险。</p>
+<p>跨期套利相较于跨品种套利而言更复杂一些。跨期套利分为牛市套利、熊市套利、牛熊交换套利。每种套利方式下还有正向套利和反向套利。不管是哪种套利方式，其核心都是认为“价差会向均值回归”。因此，在价差偏离均值水平时，按照判断买入被低估的合约，卖出被高估的合约。</p>
+</section>
+<section id="id7">
+<h5>套利方法<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h5>
+<p>套利方法可归结为以下几类：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>价差（近-远期）</p></th>
+<th class="head"><p>未来价</p></th>
+<th class="head"><p>原理</p></th>
+<th class="head"><p>操作</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>偏大</p></td>
+<td><p>上涨/下跌</p></td>
+<td><p>近月增长 &gt;远月增长</p></td>
+<td><p>买近卖远</p></td>
+</tr>
+<tr class="row-odd"><td><p>偏大</p></td>
+<td><p>上涨/下跌</p></td>
+<td><p>近月下跌 &lt; 远月下跌</p></td>
+<td><p>买近卖远</p></td>
+</tr>
+<tr class="row-even"><td><p>偏小</p></td>
+<td><p>上涨/下跌</p></td>
+<td><p>近月增长 &lt; 远月增长</p></td>
+<td><p>卖近买远</p></td>
+</tr>
+<tr class="row-odd"><td><p>偏小</p></td>
+<td><p>上涨/下跌</p></td>
+<td><p>近月下跌 &gt; 远月下跌</p></td>
+<td><p>卖近买远</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id8">
+<h5>协整检验<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h5>
+<p>要想判断两个序列之间是否存在关系，需要对序列进行协整检验。以大商所豆粕为例，对DCE.m1701和DCE.m1705进行检验。</p>
+<p>1701合约的t值 = -2.1176，临界值为-3.4769，t &gt; 临界值说明序列平稳。
+1705合约的t值 = -2.5194，临界值为-3.4769，t &gt; 临界值说明序列平稳。</p>
+<p>两个序列都为单整序列，残差序列也平稳，说明二者之间存在长期稳定的均衡关系。</p>
+</section>
+<section id="id9">
+<h5>策略步骤<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h5>
+<p>第一步：选择同一标的不同月份的合约，本策略以豆粕为例。
+第二步：计算价差的上下轨。
+第三步：设计信号。价差上穿上轨，买近卖远；价差下穿下轨，卖近买远。
+价差达到止损点时平仓，价差回归到均值附近时平仓。</p>
 </section>
 </section>
-<div class="toctree-wrapper compound">
-</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,12 +554,12 @@ AKTools 和 Awesome-data 等开源项目，欢迎大家使用。</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="about.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">关于 AKFDS</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+    <a class='left-prev' id="prev-link" href="fin_cryptocurrency.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">加密货币</p>
+        </div>
     </a>
 </div>
             </footer>
