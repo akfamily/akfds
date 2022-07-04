@@ -456,8 +456,9 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>量化策略<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
-<p>本章主要给大家介绍什么是期货，期货的定义最早起源于美国，主要是在大宗商品
-市场的买卖上</p>
+<p>量化策略是指整个交易过程完全实现为计算机程序，从数据接收、处理到交易执行都是由计算机程序自动完成。
+为了开发这样的量化策略，预先需要收集一定量的数据，并在其基础上建立一套基于数字的处理决策模型，通常把这一过程叫做量化策略的研究；
+策略研究好后，就要实现它，让它活起来。</p>
 <section id="id2">
 <h2>股票策略<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <p>期货的定义：期货是在交易所交易的</p>
@@ -510,7 +511,7 @@ title="Print to PDF"
 </section>
 <section id="id8">
 <h5>协整检验<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h5>
-<p>要想判断两个序列之间是否存在关系，需要对序列进行协整检验。以大商所豆粕为例，对DCE.m1701和DCE.m1705进行检验。</p>
+<p>要想判断两个序列之间是否存在关系，需要对序列进行协整检验。以大连商品交易所的 <strong>豆粕</strong> 为例，对 <strong>DCE.m1701</strong> 和 <strong>DCE.m1705</strong> 进行检验。</p>
 <p>1701合约的t值 = -2.1176，临界值为-3.4769，t &gt; 临界值说明序列平稳。
 1705合约的t值 = -2.5194，临界值为-3.4769，t &gt; 临界值说明序列平稳。</p>
 <p>两个序列都为单整序列，残差序列也平稳，说明二者之间存在长期稳定的均衡关系。</p>
