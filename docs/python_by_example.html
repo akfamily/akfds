@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=927b94d3fcb96560df09"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -78,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -317,10 +327,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -328,7 +338,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -455,7 +465,7 @@ in the notebook if you run it on your own machine.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/9b8f759f07c1abb67c631aab2f972d36ca0dec83177466433c5a8c95001a702f.png" src="../_images/9b8f759f07c1abb67c631aab2f972d36ca0dec83177466433c5a8c95001a702f.png" />
+<img alt="../_images/9dd2d074c3dbadc583affd31e9a2e4347df57139b213e675a8514e5281879a04.png" src="../_images/9dd2d074c3dbadc583affd31e9a2e4347df57139b213e675a8514e5281879a04.png" />
 </div>
 </div>
 <p>Let’s break this program down and see how it works.</p>
@@ -603,7 +613,7 @@ lines after the import statements are</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b5f34b3afea14161da433dee1c4c05bf6c2b3b3f6437880c93592c0f671e1e27.png" src="../_images/b5f34b3afea14161da433dee1c4c05bf6c2b3b3f6437880c93592c0f671e1e27.png" />
+<img alt="../_images/5dd5bff72a5b975c9cf34f2ab65e3392bb6aa35864317bf49784e2b47342b156.png" src="../_images/5dd5bff72a5b975c9cf34f2ab65e3392bb6aa35864317bf49784e2b47342b156.png" />
 </div>
 </div>
 <p>The first line generates 100 (quasi) independent standard normals and
@@ -640,7 +650,7 @@ semantics in a familiar setting.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4ec552e7a78b7c92e416d9631ed47e189b55f418b41a96167a861247986e1e64.png" src="../_images/4ec552e7a78b7c92e416d9631ed47e189b55f418b41a96167a861247986e1e64.png" />
+<img alt="../_images/a3caa72e5ce82504929550d43db2cfe8b14983794d4d73261af5af67d5cbec83.png" src="../_images/a3caa72e5ce82504929550d43db2cfe8b14983794d4d73261af5af67d5cbec83.png" />
 </div>
 </div>
 <p>In brief,</p>
@@ -887,7 +897,7 @@ a <code class="docutils literal notranslate"><span class="pre">while</span></cod
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/48008c03fc2559b436fa49c384effee099ff97513a975434cfc6b84efe9a5d2f.png" src="../_images/48008c03fc2559b436fa49c384effee099ff97513a975434cfc6b84efe9a5d2f.png" />
+<img alt="../_images/3bc08d5c7bd56b0ed31090d0a40ef420b99d804bdb3e1426b58e752be447a0d5.png" src="../_images/3bc08d5c7bd56b0ed31090d0a40ef420b99d804bdb3e1426b58e752be447a0d5.png" />
 </div>
 </div>
 <p>Note that</p>
@@ -1080,7 +1090,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b6c481b0b09acb08410bbfd3dcb00edb4e801bfa5dcf2eaf3c2fd03f1a9bf889.png" src="../_images/b6c481b0b09acb08410bbfd3dcb00edb4e801bfa5dcf2eaf3c2fd03f1a9bf889.png" />
+<img alt="../_images/50db768eacb7ff4f7e229938856340f0e87dde3bb88469f287caafa6625fd038.png" src="../_images/50db768eacb7ff4f7e229938856340f0e87dde3bb88469f287caafa6625fd038.png" />
 </div>
 </div>
 </section>
@@ -1104,7 +1114,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4b5fc0fd9a427335c4c635a1c3dddddeefcdeab8c8409d27614453e418c4abc1.png" src="../_images/4b5fc0fd9a427335c4c635a1c3dddddeefcdeab8c8409d27614453e418c4abc1.png" />
+<img alt="../_images/d087d8e01c1cb5ba4d45c923ec30bed04a259fa7205b15e5f30de9645a0ddb19.png" src="../_images/d087d8e01c1cb5ba4d45c923ec30bed04a259fa7205b15e5f30de9645a0ddb19.png" />
 </div>
 </div>
 </section>
@@ -1127,7 +1137,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/6291a5e048fa1e3b1df1fc950479d88d8666a7a313e6b4c45d1f0148920f7203.png" src="../_images/6291a5e048fa1e3b1df1fc950479d88d8666a7a313e6b4c45d1f0148920f7203.png" />
+<img alt="../_images/6dfc90fab234f954868706854cc3610b6fac9b7cd997365da4d0c94a8345c03d.png" src="../_images/6dfc90fab234f954868706854cc3610b6fac9b7cd997365da4d0c94a8345c03d.png" />
 </div>
 </div>
 </section>
@@ -1154,7 +1164,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/ffd963cbc6943c69cdc1c6b582673013eedb95f54cc2168354e5eda403f68666.png" src="../_images/ffd963cbc6943c69cdc1c6b582673013eedb95f54cc2168354e5eda403f68666.png" />
+<img alt="../_images/c592a08acae873d9db66f486e97ce18644e31215faebf5e660d6220088eb7a7b.png" src="../_images/c592a08acae873d9db66f486e97ce18644e31215faebf5e660d6220088eb7a7b.png" />
 </div>
 </div>
 <p>Here’s a shorter way to write the same thing:</p>
@@ -1175,7 +1185,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/94053978646e58c9af76b671622d80d773771c7a21fb4b465aaf502877f0e25b.png" src="../_images/94053978646e58c9af76b671622d80d773771c7a21fb4b465aaf502877f0e25b.png" />
+<img alt="../_images/2c3f27e5de7368636a278d3904afd0c2ee955bd16cb132b487fcd1f30516686a.png" src="../_images/2c3f27e5de7368636a278d3904afd0c2ee955bd16cb132b487fcd1f30516686a.png" />
 </div>
 </div>
 </section>
@@ -1208,7 +1218,7 @@ fraction that falls into the circle.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.1466
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.13332
 </pre></div>
 </div>
 </div>
@@ -1242,11 +1252,10 @@ fraction that falls into the circle.</p>
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="getting_started.html"
@@ -1266,10 +1275,7 @@ fraction that falls into the circle.</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1369,8 +1375,8 @@ By AKFamily
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09"></script>
 
   <footer class="bd-footer">
   </footer>
